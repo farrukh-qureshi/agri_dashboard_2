@@ -106,7 +106,7 @@ def main():
 
     # Date range
     end_date = datetime.now()
-    start_date = end_date - timedelta(days=365)
+    start_date = end_date - timedelta(days=365*20)
     
     print(f"Fetching weather data for coordinates: ({latitude}, {longitude})")
     weather_data = get_weather_data(latitude, longitude, start_date, end_date)
